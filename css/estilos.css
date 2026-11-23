@@ -364,6 +364,13 @@ footer{
         width: 260px;
         height: 260px;
     }
+  
+
+
+footer{
+    border-top: 3px solid #5a3220;
+}
+EOF
 
     .producto, .producto.invertido{
         flex-direction: column;
