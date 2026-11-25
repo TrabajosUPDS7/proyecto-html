@@ -125,8 +125,9 @@ nav a.activo{
 
 .portada img{
     width: 380px;
-    height: 380px;
-    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: 45%;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid #E8A33D;
@@ -149,6 +150,8 @@ nav a.activo{
     color: #3B2114;
     transform: scale(1.05);
 }
+
+
 
 /*titulo de cada seccion*/
 .seccion-titulo{
@@ -255,6 +258,34 @@ nav a.activo{
     margin: 0 auto;
     padding: 30px 6% 50px;
 }
+.video {
+    padding: 20px 20px 40px;
+}
+.video video {
+    display: block;
+    margin: 0 auto;          /* lo centra */
+    width: 320px;            
+    max-width: 100%;
+    max-height: 500px;       
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #000;
+}
+.video{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 6% 0;
+}
+.video h2{
+    font-size: 2em;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;   /* centra de izquierda a derecha */
+    align-items: center;
+     padding: 40px 20px;
+    
+}
+
 
 .paso{
     flex: 1;
@@ -322,6 +353,47 @@ nav a.activo{
     font-size: 2em;
 }
 
+.pedido-general{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: #FFFAEA;
+    padding: 22px 30px;
+    border-radius: 120px 20px 20px 120px;
+    box-shadow: 0 5px 15px rgba(59, 33, 20, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pedido-general{
+    flex-direction: row-reverse;
+    border-radius: 20px 120px 120px 20px;
+}
+.pedido-general button{
+    background: transparent;
+    color: #3B2114;
+    font-weight: bold;
+    border: 2px solid #3B2114;
+    padding: 9px 18px;
+    border-radius: 8px;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.pedido-general {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.pedido-general .pedir {
+  font-size: 18px;
+  padding: 14px 40px;        
+}
+
+
 /*pie de pagina*/
 footer{
     display: flex;
@@ -332,6 +404,7 @@ footer{
     color: #FBF1CF;
     font-size: 0.9em;
     padding: 22px 6%;
+    border-top: 3px solid #5a3220;
 }
 
 /*responsivo*/
@@ -363,14 +436,8 @@ footer{
     .portada img{
         width: 260px;
         height: 260px;
+        max-width: 100%;
     }
-  
-
-
-footer{
-    border-top: 3px solid #5a3220;
-}
-EOF
 
     .producto, .producto.invertido{
         flex-direction: column;
